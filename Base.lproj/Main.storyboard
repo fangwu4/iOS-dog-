@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1lB-mz-TbW">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="3bC-uy-cBa">
+            <objects>
+                <navigationController id="1lB-mz-TbW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="63q-eZ-tv4">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="N0O-8s-QjJ" kind="relationship" relationship="rootViewController" id="SwB-P1-xRV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsr-po-VS5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-738" y="-36"/>
+        </scene>
+        <!--Main Menu-->
+        <scene sceneID="5QN-RR-ibV">
+            <objects>
+                <viewController id="N0O-8s-QjJ" customClass="BinScrollViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="taO-d6-ZuE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tLQ-1l-OGz">
+                                <rect key="frame" x="0.0" y="62" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiP-CQ-xvW">
+                                        <rect key="frame" x="134" y="21" width="112" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sGL-7l-ydl">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="611524377059_.pic" translatesAutoresizingMaskIntoConstraints="NO" id="lUb-lk-aKS">
+                                        <rect key="frame" x="0.0" y="600" width="414" height="94"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0l-Va-8ub">
+                                        <rect key="frame" x="0.0" y="71" width="208" height="177"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Breed Detect" backgroundImage="1">
+                                            <color key="titleColor" red="1" green="0.019112768074239006" blue="0.039264684222732105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="IMN-24-Z2Q" kind="show" id="FV6-Xy-dM9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Teb-ZL-p59">
+                                        <rect key="frame" x="206" y="71" width="208" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Dog Kinds" backgroundImage="2">
+                                            <color key="titleColor" red="1" green="0.34629535859999999" blue="0.2002213806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="9oa-7V-mOY" kind="show" id="LCX-dG-EzK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2e-IW-q57">
+                                        <rect key="frame" x="206" y="248" width="208" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Real Time" backgroundImage="u=601532540,1495772225&amp;fm=27&amp;gp=0">
+                                            <color key="titleColor" red="1" green="0.34629535859999999" blue="0.2002213806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Ym0-0L-ujJ" kind="show" id="xo0-a6-aS7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxI-0U-NtM">
+                                        <rect key="frame" x="0.0" y="248" width="208" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Image Recognition" backgroundImage="3">
+                                            <color key="titleColor" red="1" green="0.019112768070000001" blue="0.039264684219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Bmq-bg-WIg" kind="show" id="xdr-pE-oos"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBL-PZ-eOR">
+                                        <rect key="frame" x="0.0" y="427" width="208" height="176"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Algorithm" backgroundImage="u=1095981557,872298535&amp;fm=27&amp;gp=0">
+                                            <color key="titleColor" red="1" green="0.019112768070000001" blue="0.039264684219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Ehm-0V-PmN" kind="show" id="ZIa-fK-3IE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9x-F9-nyX">
+                                        <rect key="frame" x="206" y="427" width="208" height="176"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Team" backgroundImage="6">
+                                            <color key="titleColor" red="1" green="0.34629535859999999" blue="0.2002213806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Jql-gB-vSg" kind="show" id="Rnt-Bi-eo5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.27361342471326533" blue="0.63285628910026093" alpha="0.21634203767123289" colorSpace="custom" customColorSpace="sRGB"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="02w-3q-qo5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main Menu" id="i2v-ms-FxN"/>
+                    <connections>
+                        <outlet property="imgView" destination="lUb-lk-aKS" id="YJy-g6-FGL"/>
+                        <outlet property="scrollView" destination="sGL-7l-ydl" id="m3f-jC-vdf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Wo-KU-XTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="-37.5"/>
+        </scene>
+        <!--Bin Photo View Controller-->
+        <scene sceneID="IMc-Qv-1mX">
+            <objects>
+                <viewController id="IMN-24-Z2Q" customClass="BinPhotoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iRQ-Vb-r1U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="5jG-8W-Qde">
+                                <rect key="frame" x="0.0" y="64" width="414" height="358"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZU0-Fx-4U2">
+                                <rect key="frame" x="209" y="444" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="10"/>
+                                <connections>
+                                    <action selector="selectPhoto:" destination="IMN-24-Z2Q" eventType="touchUpInside" id="1tO-Jy-E7z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pko-uO-TvM">
+                                <rect key="frame" x="198" y="513" width="196" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnClick1:" destination="IMN-24-Z2Q" eventType="touchUpInside" id="DJc-cC-sBD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVc-bM-c2M">
+                                <rect key="frame" x="16" y="517" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxa-1s-HFi">
+                                <rect key="frame" x="16" y="671" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFi-wj-2pV">
+                                <rect key="frame" x="209" y="561" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnClick2:" destination="IMN-24-Z2Q" eventType="touchUpInside" id="a7T-uz-IcB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ake-DM-Jis">
+                                <rect key="frame" x="209" y="613" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnClick3:" destination="IMN-24-Z2Q" eventType="touchUpInside" id="Foi-67-Tpw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqX-F0-D8y">
+                                <rect key="frame" x="16" y="618" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGS-AL-TP0">
+                                <rect key="frame" x="209" y="666" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnClick4:" destination="IMN-24-Z2Q" eventType="touchUpInside" id="BHl-oi-ExG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIX-wU-Hgw">
+                                <rect key="frame" x="16" y="566" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNK-ZS-ecC">
+                                <rect key="frame" x="308" y="459" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Predict"/>
+                                <connections>
+                                    <action selector="predict:" destination="IMN-24-Z2Q" eventType="touchUpInside" id="5v8-bn-PEw"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PSc-w1-hnL">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Dog Breed Prediction" id="j3z-n0-hP0"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuK-Yp-ch6">
+                                <rect key="frame" x="73" y="444" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="takePhoto" image="9"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="IMN-24-Z2Q" eventType="touchUpInside" id="Hfy-dO-dEu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="qgh-XF-4hW"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="Pko-uO-TvM" id="yEq-0I-9vs"/>
+                        <outlet property="button2" destination="aFi-wj-2pV" id="BuP-3L-wnH"/>
+                        <outlet property="button3" destination="Ake-DM-Jis" id="eqm-kz-X2s"/>
+                        <outlet property="button4" destination="pGS-AL-TP0" id="Z8J-ai-2wr"/>
+                        <outlet property="imgView" destination="5jG-8W-Qde" id="v9G-Tf-vFQ"/>
+                        <outlet property="label1" destination="NVc-bM-c2M" id="Ys8-1m-aYx"/>
+                        <outlet property="label2" destination="tIX-wU-Hgw" id="Y6s-1Z-aVP"/>
+                        <outlet property="label3" destination="AqX-F0-D8y" id="ZRS-1i-FVN"/>
+                        <outlet property="label4" destination="hxa-1s-HFi" id="cXP-Ds-gff"/>
+                        <segue destination="jeU-hJ-AsB" kind="show" identifier="toShow" id="ECU-hK-waQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nM4-So-dbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149.27536231884059" y="-958.69565217391312"/>
+        </scene>
+        <!--Bin Table View Controller-->
+        <scene sceneID="M2S-Rf-3qI">
+            <objects>
+                <tableViewController id="9oa-7V-mOY" customClass="BinTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="piX-eq-e01">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="dog_cell" id="iGR-lb-GTP">
+                                <rect key="frame" x="0.0" y="55.333333333333343" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iGR-lb-GTP" id="yQX-i7-bXq">
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="jeU-hJ-AsB" kind="show" identifier="toShows" id="pEE-g6-YSq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9oa-7V-mOY" id="egd-X8-kkt"/>
+                            <outlet property="delegate" destination="9oa-7V-mOY" id="gDe-Tv-Nbt"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NqE-57-bwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050" y="-478"/>
+        </scene>
+        <!--Bin Show View Controller-->
+        <scene sceneID="TnV-y8-mic">
+            <objects>
+                <viewController id="jeU-hJ-AsB" customClass="BinShowViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="csF-dP-TSv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvS-ug-KRe">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASt-lj-OHV">
+                                        <rect key="frame" x="59" y="40" width="269" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Anu-AN-aUF">
+                                        <rect key="frame" x="0.0" y="120" width="207" height="144"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zao-d2-U1w">
+                                        <rect key="frame" x="207" y="120" width="211" height="144"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sTc-rE-NH9">
+                                        <rect key="frame" x="207" y="260" width="207" height="152"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2oR-p5-roD">
+                                        <rect key="frame" x="8" y="407" width="398" height="249"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yPX-Ie-dyH">
+                                        <rect key="frame" x="0.0" y="260" width="207" height="152"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="f8o-30-jMy"/>
+                    </view>
+                    <connections>
+                        <outlet property="Name" destination="ASt-lj-OHV" id="nat-aN-4NA"/>
+                        <outlet property="imgView1" destination="Anu-AN-aUF" id="Atm-Ld-yHf"/>
+                        <outlet property="imgView2" destination="Zao-d2-U1w" id="AEJ-Ab-Zo3"/>
+                        <outlet property="imgView3" destination="yPX-Ie-dyH" id="0UM-7r-cwg"/>
+                        <outlet property="imgView4" destination="sTc-rE-NH9" id="FfB-Wg-CTH"/>
+                        <outlet property="textView" destination="2oR-p5-roD" id="ngD-ge-Xvb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXN-Ej-tM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1869.5652173913045" y="-929.34782608695662"/>
+        </scene>
+        <!--BinOD View Controller-->
+        <scene sceneID="3Vk-yU-nNC">
+            <objects>
+                <viewController id="Bmq-bg-WIg" customClass="BinODViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PAh-lz-7JD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="13" translatesAutoresizingMaskIntoConstraints="NO" id="xMF-PB-jrW">
+                                <rect key="frame" x="0.0" y="64" width="414" height="358"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uW1-V3-cx6">
+                                <rect key="frame" x="221" y="430" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="10"/>
+                                <connections>
+                                    <action selector="btnClick2:" destination="Bmq-bg-WIg" eventType="touchUpInside" id="8Ru-Dl-Fe6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4G-Q5-F8h">
+                                <rect key="frame" x="85" y="430" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="9"/>
+                                <connections>
+                                    <action selector="btnClick1:" destination="Bmq-bg-WIg" eventType="touchUpInside" id="VPF-mz-mP7"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IVK-qH-6e6">
+                                <rect key="frame" x="16" y="518" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wgY-XE-oEQ">
+                                <rect key="frame" x="106" y="518" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TBa-gB-S55">
+                                <rect key="frame" x="198" y="518" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J2H-sj-waj">
+                                <rect key="frame" x="287" y="518" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTk-wB-hfh">
+                                <rect key="frame" x="16" y="598" width="72" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.27625077599999998" blue="0.26743329919999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZd-hC-XFc">
+                                <rect key="frame" x="106" y="598" width="72" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.27625077599999998" blue="0.26743329919999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpj-KW-ops">
+                                <rect key="frame" x="198" y="598" width="72" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.27625077599999998" blue="0.26743329919999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqj-ux-2CF">
+                                <rect key="frame" x="287" y="598" width="72" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.27625077599999998" blue="0.26743329919999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9N-2c-37E">
+                                <rect key="frame" x="67" y="627" width="241" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Move to dog breed detection"/>
+                                <connections>
+                                    <action selector="toPhoto:" destination="Bmq-bg-WIg" eventType="touchUpInside" id="0Jj-IH-PXi"/>
+                                    <segue destination="IMN-24-Z2Q" kind="show" identifier="toPhoto" id="RMm-f2-9sn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ao5-7W-GqZ">
+                                <rect key="frame" x="287" y="445" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Detect"/>
+                                <connections>
+                                    <action selector="Connect:" destination="Bmq-bg-WIg" eventType="touchUpInside" id="Qq6-4r-s1M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="OHW-Nd-CZ7"/>
+                    </view>
+                    <connections>
+                        <outlet property="img1" destination="IVK-qH-6e6" id="ksK-CN-SId"/>
+                        <outlet property="img2" destination="wgY-XE-oEQ" id="hl2-ii-tDA"/>
+                        <outlet property="img3" destination="TBa-gB-S55" id="uSB-xX-80s"/>
+                        <outlet property="img4" destination="J2H-sj-waj" id="AtW-NG-Y1l"/>
+                        <outlet property="imgView" destination="xMF-PB-jrW" id="N8t-qD-iWg"/>
+                        <outlet property="label1" destination="bTk-wB-hfh" id="U7W-fB-RYC"/>
+                        <outlet property="label2" destination="qZd-hC-XFc" id="PKm-3l-iGr"/>
+                        <outlet property="label3" destination="Wpj-KW-ops" id="oeU-OJ-MAo"/>
+                        <outlet property="label4" destination="Oqj-ux-2CF" id="owU-HE-JFJ"/>
+                        <outlet property="toPhoto" destination="y9N-2c-37E" id="FNa-G2-WYc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TcX-xi-I4l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-739.13043478260875" y="796.46739130434787"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9Np-4P-K3f">
+            <objects>
+                <viewController id="Ehm-0V-PmN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Sv-2H-fwF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NuP-oW-Lp3">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">1. Classification Framework
+The ConvNet architectures of our network is based on the classical network AlexNet with a fine-tune optimization towards generated dog breed identification dataset, which is presented in Figure 5. The CNN framework consists of eight hidden layers, with three FC layers and five convolutional layers, plus a single input layer and two output layers of loss and accuracy layers. 
+1.1 Structure of CNN model
+Below. We briefly describe the mainly features and layers of the network’s structure starting with the input layer, followed by a stack of convolutional layers and fully-connected layers with the hiddle activation and pooling layers. The output is derived from the last two layers, namely the loss layer and the accuracy layer, which generate the performance of model with predifned iterations.
+1.1.1 Input Layer
+The input towards the whole ConvNets is the training dataset and the development dataset. The raw images are preprocessed into uniform 256*256 pixels with correct labels for each image. Then performing mean substraction and normalization towards the whole dataset. Apart from this, a randomly extra crop is applied to the preprocessed image to 224*224 pixels to increase the suitability of the model. The batch size of the input image is sent to the 256 which follows the capability of the GPU device. Finally, a LMDB file that contains the matrix of the whole data and accomplishes of all of the above process is sent to the model.
+1.1.2 Convolutional Layer
+The whole network contains five convolutional layers, and all of the weights for ConvNet layers is initialized follow the guassian distribution with the bias weights initialized as zero. The first convolutional layer filters the 224*224*3 input image with 96 kernels of size 11*11*3, and the stride is set to four which represent the distance between the center of the reception fields within the feature map. The second convolutional layer makes dot product with each feature map output from the first convolutional layer, the kernel size is 5*5*256. Similarly, the third, fourth, and fifth layer both accept the output from the previous layer with kernel size of 384*3*3, 192*3*3 and 3*3*192, however, there is no pooliing or normalization layer between the last three convolutional layers. The intention of the convolutional layer is to capture the existing feature from the input data, which each kernel represent as a reception field. The number of accepting feature is decided by the kernel size and stride.
+1.1.3 Fully-Connected Layer
+There are three FC layers placed after the whole convolutional layers, similarly, all of the weights are initialized to follow the gaussian distribution to reduce the number of iterations in the optimization process, and the bias factor is set to zero constant. The first two fully-connected layer generate 4096 outputs, and each neuron is connected to all of the output from the previous layer. However, the last fully-connected layer generates 120 outputs which corresponds to the 120 dog breed types and the output is fed to the later softmax function to generate corresponding loss and accuracy.
+1.1.4 Max Poolinng Layer
+A pooling layer is added to the output of the first two convolutional layer and the first fully-connected layer, the reason behind this that not all of the parameters learned by the Conv or FC layer is meaningful, we could filter some of the parameter through the pooling function to prevent overfitting and work similarly as a regularization function. Our network applied the max pooling function with a kernel size of 3*3, which won’t disrupt the number of feature maps from the previous convolutional or FC layer.
+1.1.5 Loss Layer and Accuracy Layer
+The final output of the model consists of the loss of each iteration and accuracy for every predefined test iteration. These two layers accept the 120 outputs from the final fully connected layer and calculate the corresponding loss and accuracy. For the loss layer, we apply the most common function type of SoftmaxWithLoss, and the accuracy layer involves the data from the development dataset.
+1.2 Network Algorithm
+For the constructed framework of the ConvNets with the initialized parameters, we need to learn features from the input image to optimize the parameters that could maximally classify the dog breeds correctly and enhance the performance, this process is accomplished by the optimization algorithm with loss function.
+1.2.1 Loss Function
+The performance or the effect of the training process is measured by the loss value, which represent the degree the model whether find the best parameter than could separate these classes. However, a loss function tells how well our classifier is. The loss function could be viewed as a predefined scale to calculate the loss and then can be used to optimize the parameters. Multiple loss functions could be applied to measure the loss, such as full loss function, SVM loss function and softmax loss function. For our network we utilize the softmax function:
+                                               Lossi = - log (esyi/Σjesj)       
+                                S = f (xi, w)
+The function calculates the negative log of the probability of the true class, where si is the score function that calculated by multiply the input value with the weights plus a bias for the ith input data.
+However, loss function could only be utilized as a measure metric, which has nothing to do with the optimizing process.
+1.2.2 Nonlinearity with ReLu Function
+For any convolutional layer or fully-connected layer, an activation function or nonlinearity function is applied when data comes in. The activation function provides the ability to enable the parameters could classify the types unlinearly, namely achieve the effect of dilinearization. For the CNN network, it classifies an incoming class by separating it with all other pre-separated classes, however, the original parameter could only segment the classes linearly, which definitely could meet the demands of multi-class classification, thus a nonlinear function could be seen as a soft classifier.
+                                             ReLu: f(x) = max (0, x)
+Multiple available activation functions are applied in the area of deep learning with different characteristics and drawbacks. Compared with the tanh and Sigmoid activation function, the RelU function contains the characteristics of non-saturating nonlinearity in terms of training process with stochastic gradient descent, both the tanh and Sigmoid function would kill the gradients when saturated neurons happen and are relatively compute expensive. And for the ReLu function, it enables the loss converges much faster in practice.
+1.2.3 Stochastic Gradient Descent Optimization with Momentum
+Optimization is the process of minimize the loss calculated by the loss function, which denotes the process of discover the best weights that performs well. The gradient is the vector or partial derivatives along each dimension, and the direction of steepest descent is the negative descent, which drives our loss consistently down. The key hyperparameter that influence the model the find the most eligible descent value is the learn rate, which measures the speed we find the lowest loss that provide the model best performance. However, high learn rate drive the model miss the minimum and could not decrease the loss, and low learn rate make the converging process extremely slow and waste the computing resource.
+To combine the advantages and avoid the drawbacks of high or low learn rate, we applied the monentum optimization approach to the stochatic gradient descent in our model. The idea is that we maintain a velocity with predefined iteration. Initially, we set a relatively high learn rate to make the gradient step into the right direction swiftly, and at every defined time step we decay the learning rate according the current velocity. In this case, we promote our network to step fast and could find the global minimum.
+1.3 Fine-Tune the ConvNet with Transfer Learning
+The optimization algorithm allows the model the find the global minimum and could drive the loss extremely low, however, the dataset size is still not sufficient to generate an optimizing performance. And in practice, it’s impossible to scratch an entire new convolutional network especially with such small dataset. Therefore, we take a pretrained ConvNets for 1000 classes and over 10 million training data as the fine-tune original model, however, we replace the last fully-connected layer with another layer defined by ourselves and continue the back-propogation, in this way the pretrained parameters could be utilised and the more image information could be captured by the model. The heuristics behind this method is that the earlier feature of the ConvNet contain more generic features, while the later layers contains feature that is more specific to the classes for the original dataset.
+However, much smaller learn rate is required here for ConvNet weights that are being fine-tuned, the final FC layer could be viewed as a new linear classifier that calculate the new optimization score towards the new dataset.
+2. Object Detection Framework
+Deep learning provides a new perspective for the research area of object detection, which alter the main point of view for applying precise computer vision approach that neural network could solve the problem of find objects within image without clear understanding of the characteristics of the raw pictures. The first successful realization of object detection with deep learning is the region-based Convolution Neural Network(RCNN), utilising pretrained CNN model to predict the thousands of proposals selected with the approach of selective search and selecting the proposals higher than the threshold. However, this approach involves extremely expensive computation resources. Another model called fast RCNN solve this problem by applying selective search only on the final convolutional feature map, thus the previous parameters could be shared by all the proposals.
+However, the proposals generated by selective search is mostly random and many of the proposals are not reasonabe. Thus, in our network, we apply the faster RCNN model and include the process of generating proposals as part of the training process, thus much less proposals with high possibility is provided along with their location in the image. This approach achieves almost cost-free proposal computation process with a deep convolution neural network.
+2.1 CNN Construction
+The realizatization of the Faster RCNN model is based on the basic CNN architecture, which using the final feature map of the model to generate proposals and make bounding box regression. For our trained model, we utilize the classical VGGNet as the convolutional network. The model consists of 19 learning layers much more than the AlexNet, however the kernel size is consistent for all convolutional layers as 3*3 with stride 1. Furthermore, the model automatically reshapes the image to multi-scale and generates multiple ConvNets and utilizes the method of Model ensembling to predict the image, the final class of input image is the class with the highest score within these generate ConvNets.
+Moreover, deep model has a much higher probability to produce more useless parameters, a dropout layer is added to the model to actively abandon some of its parameters. The reason for applying the VGG network as the training network is due to more parameters is required for the proposal generation process.
+2.2 Region Proposal Network
+The proposals are generated through region proposal network, which is contructed by putting a few additional convolutional layers that perform bounding box regression and provide objectness scores simultaneously, thus the RPN network could be viewed as a fully convolutional network that enables end-to-end proposal generation. The process of unifying the RPN with convolutional neural network is a fine-tuning procedure for object detection and proposal generation. The first module of the faster RCNN applying deep FCN to generate regions, and second module detect the proposed regions.
+The RPN accept the feature maps from the previous neural networks, and outputs multiple reasonable object proposals with their corresponding objectness score, this is accomplished by sliding multiple windows of scales of 1:1, 1:2, 2:1 towards these incoming feature maps, and the sliding window is mapped to a lower-dimensional feature (256-d) of the original dimensions.
+The sliding window enables the parameters within the fully-connected layers could be shared across different spatial positions. Furthermore, each archor proposal of a sliding window generates four regression parameters, which denotes the coordinates of the bounding box, and two score parameters, which represents the score of objectness as shown in Figure 6.
+2.3 Loss Function
+Due to the region proposal network outputs six parameters with four regression coordinate paraters and two class label parameters, an extra loss function must be applied here. The idea of Intersaction-over-Union (IoU) represents the overlap between the predicted box and the ground-truth box. A region is reasonably proposed if it contains the highest IoU value or the IoU value is higher than 0.7. Consequently, the loss function contains of two parts, the first part is the loss of the predicted probability of archor proposal is an object, and the second part is the regression loss which stand for the distance with the ground truth box.
+2.4 Training Region Proposal Network
+Similarly, as the RPN is applied to the basic convolutional neural model, the training process is accomplished similarly though back-propagation and stochastic gradient descent. The extra loss function need to be applied to achieve the optimize the object detection and bounding box regression process. The weights for all any additional layers added based on the CNN model are initialized randomly to follow the guassion distribution with a standard derivation of 0.01, however, all other parameters are initialized by the pre-trained convolutional model basesd on the dataset from ImageNet. The hyperparameter need to be determined carefully. A relatively normal learn rate of 1e-3 is utilised only for the first half mini-batches, and the learn rate for the rest mini-batches optimization is set to 1e-4 to step into the lowest loss value.
+2.5 Implementation Details
+Compared with the pure CNN model, the size of the image is set to the 256*256 pixels to facilitate the random crop, however, for faster RCNN model we only restrict the shorter side of the input image to 600 pixels for both the training or testing images on region proposal and object detection networks.
+Furthermore, the size of the sliding archores is set to 128*128, 256*256, 512*512 with the scale of 1:1, 1:2, and 2:1.
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Wtb-Xo-Aes"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vqx-sd-lWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228.98550724637684" y="796.46739130434787"/>
+        </scene>
+        <!--Bin Real View Controller-->
+        <scene sceneID="P1W-03-PTe">
+            <objects>
+                <viewController id="Ym0-0L-ujJ" customClass="BinRealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wfc-yc-beJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="13" translatesAutoresizingMaskIntoConstraints="NO" id="LIk-bU-YEE">
+                                <rect key="frame" x="0.0" y="64" width="414" height="418"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcr-2c-v6c">
+                                <rect key="frame" x="65" y="532" width="64" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="9"/>
+                                <connections>
+                                    <action selector="startButton:" destination="Ym0-0L-ujJ" eventType="touchUpInside" id="r0a-Qr-3vm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIx-Fc-5MZ">
+                                <rect key="frame" x="164" y="523" width="230" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9P-2G-1Gc">
+                                <rect key="frame" x="164" y="605" width="230" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="m0t-pu-sPx"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="LIk-bU-YEE" id="zLX-QQ-0rB"/>
+                        <outlet property="probLabel" destination="g9P-2G-1Gc" id="1m9-Gi-J5c"/>
+                        <outlet property="stateLabel" destination="LIx-Fc-5MZ" id="Lw9-mn-dKw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCV-s5-xBR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724.6376811594205" y="83.152173913043484"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GRC-od-dwo">
+            <objects>
+                <viewController id="Jql-gB-vSg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="geC-FH-XEe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eHK-MM-IHU">
+                                <rect key="frame" x="0.0" y="64" width="414" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.74766875489999995" blue="0.41100177249999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Project Name: A mobile application for Dog Breed Detection based on deep Convolutional Neural Networks                                        Coordinator: Richard Sinnott                        Designer: Wenbin Chen                          Programmer: Fang Wu                                   Contact:913608780@qq.com</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="611524377059_.pic" translatesAutoresizingMaskIntoConstraints="NO" id="yld-Vg-qIa">
+                                <rect key="frame" x="88" y="666" width="238" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9q-Fc-Wfr">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Team" id="vAk-qU-ROh"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6a-H4-W2n">
+                                <rect key="frame" x="0.0" y="332" width="191" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="WechatIMG58"/>
+                                <state key="highlighted" image="WechatIMG57"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqI-Jl-O7K">
+                                <rect key="frame" x="0.0" y="525" width="191" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="WechatIMG60"/>
+                                <state key="highlighted" image="WechatIMG59"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fang Wu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hud-OL-9kU">
+                                <rect key="frame" x="230" y="559" width="112" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WenBin Chen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7q-zW-uA4">
+                                <rect key="frame" x="230" y="400" width="112" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83137254900000002" green="0.50720488170851297" blue="0.39650582848878924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="wyK-j5-a2O"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qe6-fG-mei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1091.304347826087" y="796.46739130434787"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="500" height="313"/>
+        <image name="10" width="500" height="500"/>
+        <image name="12" width="500" height="500"/>
+        <image name="13" width="1024" height="1024"/>
+        <image name="2" width="500" height="482"/>
+        <image name="3" width="500" height="354"/>
+        <image name="6" width="500" height="500"/>
+        <image name="611524377059_.pic" width="1371" height="509"/>
+        <image name="9" width="300" height="300"/>
+        <image name="WechatIMG57" width="719" height="1280"/>
+        <image name="WechatIMG58" width="170" height="235"/>
+        <image name="WechatIMG59" width="1280" height="1138"/>
+        <image name="WechatIMG60" width="442" height="442"/>
+        <image name="u=1095981557,872298535&amp;fm=27&amp;gp=0" width="500" height="300"/>
+        <image name="u=601532540,1495772225&amp;fm=27&amp;gp=0" width="395" height="449"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ECU-hK-waQ"/>
+        <segue reference="FV6-Xy-dM9"/>
+    </inferredMetricsTieBreakers>
+</document>
